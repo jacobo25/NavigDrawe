@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, AzulFragment.OnFragmentInteractionListener, VerdeFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, AzulFragment.OnFragmentInteractionListener, VerdeFragment.OnFragmentInteractionListener,RedFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity
             fragment = new VerdeFragment();
             FragmentoSeleciionado = true;
         } else if (id == R.id.nav_slideshow) {
+            fragment = new RedFragment();
+            FragmentoSeleciionado = true;
 
         } else if (id == R.id.nav_manage) {
 
